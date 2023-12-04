@@ -1,0 +1,16 @@
+{
+  "name": "generating-files-from-templates-using-a-node-cli",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest --watch=false",
+    "gen-doc": "ts-node ./cli/gen-doc.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "memfs": "^4.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5",
+    "vitest": "^0.34.6"
+  }
+}
