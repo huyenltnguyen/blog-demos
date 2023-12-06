@@ -1,6 +1,6 @@
-# generating-files-from-templates-using-a-node-cli
+# generating-files-from-templates-with-a-cli-command
 
-Demo code for https://www.huyenltnguyen.com/blog/generating-files-from-templates-using-a-node-cli.
+Demo code for https://www.huyenltnguyen.com/blog/generating-files-from-templates-with-a-cli-command.
 
 ## Commands
 
