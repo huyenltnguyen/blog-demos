@@ -1,5 +1,5 @@
 import { describe, it, vi, expect, beforeEach, afterEach } from 'vitest'
-import fs, { promises as fsPromises } from 'fs'
+import fs from 'fs'
 import { vol } from 'memfs'
 import path from 'path'
 
@@ -12,20 +12,15 @@ vi.mock('fs', async () => {
 
   return {
     default: memfs.fs,
-    promises: memfs.fs.promises,
   }
 })
 
 describe('genPost', () => {
-  const setup = () => {
+  beforeEach(() => {
     // Create a `docs` folder with a `first-doc.md` in the virtual file system
     vol.fromJSON({
       'docs/first-doc.md': 'Hello world',
     })
-  }
-
-  beforeEach(() => {
-    setup()
   })
 
   afterEach(() => {
